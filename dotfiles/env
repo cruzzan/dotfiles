@@ -2,6 +2,3 @@
 export EDITOR='vim'
 export CLICOLOR=1
 
-# Highlight grep matches
-export GREP_OPTIONS='--color=auto'
-
