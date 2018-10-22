@@ -6,6 +6,26 @@ set completion-ignore-case on
 # List all possible matches
 set show-all-if-ambiguous on
 
+# Add trailing slash to completed symlinked directory names
+set mark-symlinked-directories on
+
+# Show all autocomplete results at once
+set page-completions off
+
+# Ask to show options for autocomplete if there are more than 200
+set completion-query-items 200
+
+# Show extra file info when completing
+set visible-stats on
+
+# Smart autocomplete if there are chars after cursor
+set skip-completed-text on
+
+# Allow UTF-8 input/output
+set input-meta on
+set output-meta on
+set convert-meta off
+
 # Shift-tab to filp thorugh options
 "\e[Z": menu-complete
 
