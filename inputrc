@@ -1,0 +1,18 @@
+$include /etc/inputrc
+
+# Make tab autocomplete case-insensitive
+set completion-ignore-case on
+
+# List all possible matches
+set show-all-if-ambiguous on
+
+# Shift-tab to filp thorugh options
+"\e[Z": menu-complete
+
+# History with up/down keys
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+# Ensure left/right keys do inline moves
+"\e[C": forward-char
+"\e[D": backward-char

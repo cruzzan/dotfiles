@@ -1,0 +1,20 @@
+DOTBASH_ROOT=___DOTBASH_ROOT___
+DOTFILES_ROOT="$DOTBASH_ROOT"/dotfiles
+
+# If not running interactively, don't do anything
+[ -z "$PS1" ] && return
+
+# Always check for window resize
+shopt -s checkwinsize
+
+# Source all my dotbash files
+for DOTFILE in $(find "$DOTFILES_ROOT")
+do
+  [ -f "$DOTFILE" ] && source "$DOTFILE"
+done
+
+# Set LSCOLORS
+eval "$(dircolors -b $DOTBASH_ROOT/dir_colors)"
+
+# Enable dotfile globbing
+shopt -s dotglob

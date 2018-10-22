@@ -1,0 +1,10 @@
+# Set large bash history
+export HISTSIZE=1000000
+export HISTFILESIZE=1000000000
+
+# No duplicate lines and lines starting with blank space in history
+export HISTCONTROL=ignoreboth
+
+# Append only to the history
+shopt -s histappend
+
