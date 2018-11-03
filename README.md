@@ -22,3 +22,10 @@ git-prompt and git-complete are pulled in form
 [contrib/completion](https://github.com/git/git/tree/master/contrib/completion)
 of gits repo.
 
+## Sub dotfiles
+
+* [Vim](vim/README.md)
+* GnuPG
+    ```bash
+    $ ln -s /path/to/dotfiles/gnupg/gpg.conf ~/.gnupg/gpg.conf
+    ```
