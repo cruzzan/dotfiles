@@ -1,0 +1,39 @@
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+call pathogen#infect()
+
+" Line numbering
+set ruler
+set relativenumber
+set number
+
+" Indentation stuff
+set autoindent
+set shiftwidth=4
+set smartindent
+set smarttab
+set softtabstop=4
+
+set showmatch
+
+" Number of undo steps to keep
+set undolevels=1000
+
+" Some clever stuff for searching
+set hlsearch
+set smartcase
+set ignorecase
+set incsearch
+
+" Whitespace chars and non-visible stuff
+:set listchars=eol:¬,tab:⯈·,trail:~,extends:▸,precedes:◂,space:·
+:set list
+highlight NonText ctermfg=242
+highlight SpecialKey ctermfg=242
+
+syntax on
+if has("autocmd")
+    filetype plugin indent on
+endif
+
+let vim_markdown_preview_github=1
+
