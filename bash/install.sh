@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SCRIPT_DIR=$(dirname $0)
-DOTFILES_ROOT=/${PWD#*/}
+DOTFILES_ROOT=/${PWD#*/../}
 HOME_DIR=~/
 USERNAME=$(whoami)
 

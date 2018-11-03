@@ -1,5 +1,6 @@
 DOTFILES_ROOT=___DOTFILES_ROOT___
 SHELL_EXTENSIONS_ROOT="$DOTFILES_ROOT"/shell-extensions
+BASH_EXTENSIONS_ROOT="$DOTFILES_ROOT"/bash/extensions
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -7,8 +8,14 @@ SHELL_EXTENSIONS_ROOT="$DOTFILES_ROOT"/shell-extensions
 # Always check for window resize
 shopt -s checkwinsize
 
-# Source all my dotbash files
+# Source all my general shell extension files
 for EXTENSION in $(find "$SHELL_EXTENSIONS_ROOT")
+do
+  [ -f "$EXTENSION" ] && source "$EXTENSION"
+done
+
+# Source all my bash specific extension files
+for EXTENSION in $(find "$BASH_EXTENSIONS_ROOT")
 do
   [ -f "$EXTENSION" ] && source "$EXTENSION"
 done
