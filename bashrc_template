@@ -1,5 +1,5 @@
-DOTBASH_ROOT=___DOTBASH_ROOT___
-DOTFILES_ROOT="$DOTBASH_ROOT"/dotfiles
+DOTFILES_ROOT=___DOTFILES_ROOT___
+SHELL_EXTENSIONS_ROOT="$DOTFILES_ROOT"/shell-extensions
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -8,13 +8,13 @@ DOTFILES_ROOT="$DOTBASH_ROOT"/dotfiles
 shopt -s checkwinsize
 
 # Source all my dotbash files
-for DOTFILE in $(find "$DOTFILES_ROOT")
+for EXTENSION in $(find "$SHELL_EXTENSIONS_ROOT")
 do
-  [ -f "$DOTFILE" ] && source "$DOTFILE"
+  [ -f "$EXTENSION" ] && source "$EXTENSION"
 done
 
 # Set LSCOLORS
-eval "$(dircolors -b $DOTBASH_ROOT/dir_colors)"
+eval "$(dircolors -b $DOTFILES_ROOT/dir_colors)"
 
 # Enable dotfile globbing
 shopt -s dotglob

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SCRIPT_DIR=$(dirname $0)
-DOTBASH_ROOT=/${PWD#*/}
+DOTFILES_ROOT=/${PWD#*/}
 HOME_DIR=~/
 USERNAME=$(whoami)
 
@@ -30,7 +30,7 @@ function backUpOld {
 
 function installProfile {
 	echo "Installing new bashrc and bash_config for $USERNAME..."
-	sed -e 's|___DOTBASH_ROOT___|'"$DOTBASH_ROOT"'|g' "$SCRIPT_DIR"/bashrc_template > "$HOME_DIR"/.bashrc
+	sed -e 's|___DOTFILES_ROOT___|'"$DOTFILES_ROOT"'|g' "$SCRIPT_DIR"/bashrc_template > "$HOME_DIR"/.bashrc
 	cp "$SCRIPT_DIR"/bash_profile "$HOME_DIR"/.bash_profile
 	cp "$SCRIPT_DIR"/inputrc "$HOME_DIR"/.inputrc
 }
