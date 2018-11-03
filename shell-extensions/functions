@@ -1,0 +1,7 @@
+# make less more friendly for non-text input files, see lesspipe(1)
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+
+# Docker commands
+drc() { echo -e "\nRemoving docker containers\n"; for i in $(docker ps -aq); do docker rm -f $i; done }
+dri() { echo -e "\nRemoving docker images\n"; for i in $(docker images -q); do docker rmi $i; done }
+
