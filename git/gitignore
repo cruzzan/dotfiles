@@ -1,3 +1,7 @@
+# IDEA crap #
+#############
+.idea/*
+
 # Compiled source #
 ###################
 *.com
