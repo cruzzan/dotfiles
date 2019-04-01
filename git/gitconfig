@@ -44,3 +44,5 @@
 [includeIf "gitdir:~/Documents/Inteleon/"]
     path = ~/.gitconfiginteleon
 
+[commit]
+	gpgsign = true
