@@ -5,3 +5,6 @@
 drc() { echo -e "\nRemoving docker containers\n"; for i in $(docker ps -aq); do docker rm -f $i; done }
 dri() { echo -e "\nRemoving docker images\n"; for i in $(docker images -q); do docker rmi $i; done }
 
+# Git commands
+git-tjoff() { echo -e "\nTjoff sa det!\n"; git checkout -b tjoff; git add .; git commit -m "TJOFF!"; git push -u origin tjoff; }
+
