@@ -20,4 +20,5 @@ The include is done in my master gitconfig and more info can be found
 
 ```bash
 $ ln -s /path/to/dotfiles/git/gitconfiginteleon ~/.gitconfiginteleon
+$ ln -s /path/to/dotfiles/git/gitconfigeasypark ~/.gitconfigeasypark
 ```

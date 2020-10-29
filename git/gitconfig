@@ -44,5 +44,8 @@
 [includeIf "gitdir:~/Documents/Inteleon/"]
     path = ~/.gitconfiginteleon
 
+[includeIf "gitdir:~/Documents/easypark/"]
+    path = ~/.gitconfigeasypark
+
 [commit]
 	gpgsign = true
