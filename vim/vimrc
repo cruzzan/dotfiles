@@ -37,3 +37,7 @@ endif
 
 let vim_markdown_preview_github=1
 
+" Plugin config
+
+" CtrlP
+let g:ctrlp_map = '<S-f>'
