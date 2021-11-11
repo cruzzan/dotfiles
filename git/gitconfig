@@ -47,5 +47,8 @@
 [includeIf "gitdir:~/Documents/easypark/"]
     path = ~/.gitconfigeasypark
 
+[includeIf "gitdir:~/Documents/evimeria/"]
+    path = ~/.gitconfigevimeria
+
 [commit]
 	gpgsign = true
