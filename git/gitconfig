@@ -50,5 +50,8 @@
 [includeIf "gitdir:~/Documents/evimeria/"]
     path = ~/.gitconfigevimeria
 
+[includeIf "gitdir:~/Documents/BalanceGolf/"]
+    path = ~/.gitconfigbalancegolf
+
 [commit]
 	gpgsign = true

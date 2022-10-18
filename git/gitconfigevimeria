@@ -1,2 +1,5 @@
 [user]
     email = sebastian.hultstrand@evimeria.se
+
+[core]
+    sshCommand = "ssh -i ~/.ssh/evimeria_id_rsa"
