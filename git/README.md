@@ -23,4 +23,5 @@ $ ln -s /path/to/dotfiles/git/gitconfiginteleon ~/.gitconfiginteleon
 $ ln -s /path/to/dotfiles/git/gitconfigeasypark ~/.gitconfigeasypark
 $ ln -s /path/to/dotfiles/git/gitconfigevimeria ~/.gitconfigevimeria
 $ ln -s /path/to/dotfiles/git/gitconfigbalancegolf ~/.gitconfigbalancegolf
+$ ln -s /path/to/dotfiles/git/gitconfigsendify ~/.gitconfigsendify
 ```

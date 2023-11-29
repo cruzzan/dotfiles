@@ -53,5 +53,8 @@
 [includeIf "gitdir:~/Documents/BalanceGolf/"]
     path = ~/.gitconfigbalancegolf
 
+[includeIf "gitdir:~/Documents/sendify/"]
+    path = ~/.gitconfigsendify
+
 [commit]
 	gpgsign = true
