@@ -10,3 +10,7 @@ export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
 # GPG
 export GPG_TTY=$(tty)
+
+# Node
+# Global packages
+export npm_config_prefix="$HOME/.local"
