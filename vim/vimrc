@@ -22,7 +22,7 @@ set ignorecase
 set incsearch
 
 " Whitespace chars and non-visible stuff
-:set listchars=eol:¬,tab:⯈·,trail:~,extends:▸,precedes:◂,space:·
+:set listchars=eol:¬,tab:>-,trail:~,extends:▸,precedes:◂,space:·
 :set list
 highlight NonText ctermfg=242
 highlight SpecialKey ctermfg=242
