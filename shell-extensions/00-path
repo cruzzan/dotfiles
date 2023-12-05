@@ -1,2 +1,6 @@
 # ~/.local/bin
 PATH="$HOME/.local/bin:$PATH"
+
+# GOPATH
+export GOPATH="$(go env GOPATH)"
+export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"
