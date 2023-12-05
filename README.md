@@ -15,3 +15,6 @@ git-prompt and git-complete are pulled in form
 [contrib/completion](https://github.com/git/git/tree/master/contrib/completion)
 of gits repo.
 
+### Packages
+* [lesspipe](https://archlinux.org/packages/extra/any/lesspipe/)
+* [bash-completion](https://archlinux.org/packages/extra/any/bash-completion/)
