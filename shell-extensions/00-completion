@@ -1,3 +1,8 @@
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
 
+# Scaleway CLI autocomplete initialization.
+eval "$(scw autocomplete script shell=bash)"
+
+# GCP CLI autocomplete
+source /etc/profile.d/google-cloud-cli.sh

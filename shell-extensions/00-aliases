@@ -37,3 +37,6 @@ alias python='python3'
 alias devalm='eval $(docker-machine env virtualbox-node-manager-1)'
 alias devalw='eval $(docker-machine env virtualbox-node-worker-1)'
 alias devalu='eval $(docker-machine env --unset)'
+
+# 1pass
+alias oplogin='eval $(op signin)'

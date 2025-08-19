@@ -58,3 +58,5 @@
 
 [commit]
 	gpgsign = true
+[diff "sopsdiffer"]
+	textconv = sops -d --config /dev/null

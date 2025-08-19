@@ -8,3 +8,8 @@ dri() { echo -e "\nRemoving docker images\n"; for i in $(docker images -q); do d
 # Git commands
 git-tjoff() { echo -e "\nTjoff sa det!\n"; git checkout -b tjoff; git add .; git commit -m "TJOFF!"; git push -u origin tjoff; }
 
+# Go/air commands
+function live_reload() {
+    air --build.cmd "go build -o /tmp/$$-live $1" --build.bin "/tmp/$$-live" --build.delay 1000 --build.kill_delay 10
+}
+
